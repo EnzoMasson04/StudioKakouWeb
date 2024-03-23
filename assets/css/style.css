@@ -1,0 +1,107 @@
+
+/* Header */
+
+/* PAGE */
+
+/* Footer */
+
+/* Button */
+
+/* Color */
+
+/*
+Rouge : #FA283A
+Orange : #FC5C1C
+Orange/Jaune : #FFB007
+Jaune : #FFD458 */
+
+.margin {
+  margin: 5rem;
+}
+
+.gradient-button {
+  position: relative;
+  background: linear-gradient(90deg, #FC5C1C, #FFB007);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px #FC5C1C; 
+}
+
+.gradient-button:hover {
+  transition: 0.5s;
+  scale: 1.1;
+  box-shadow: none;
+}
+
+.input {
+  border-radius: 5px;
+  outline: 2px solid #FC5C1C;
+  border: 0;
+  background-color: #e2e2e2;
+  outline-offset: 4px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.input:focus {
+  outline-offset: 3px;
+  background-color: #ffffff
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid #FC5C1C;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #f9dcb3;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #FC5C1C;
+  border: 2px solid #212121;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid #212121;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
