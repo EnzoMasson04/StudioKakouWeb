@@ -1,5 +1,7 @@
 <template>
+  <UserHeader/>
   <div>
-      <slot />
+    <slot />
   </div>
+  <UserFooter />
 </template>

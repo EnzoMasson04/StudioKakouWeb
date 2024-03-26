@@ -1,25 +1,34 @@
-<script setup lang="ts">
-  const runtimeConfig = useRuntimeConfig()
+<script>
+
+export default {
+  // Composant futur
+}
 </script>
 
 <template>
-  <div class="margin">
-    <p>Bouton</p>
-    <button class="gradient-button">Appuyer</button> 
-  </div>
-  <div class="margin">
-    <p>Input</p>
-    <input class="input"> 
-  </div>
-  <div class="margin">
-    <p>CheckBox</p>
-    <label class="checkbox-container">
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label> 
-  </div>
-  <div class="margin">
-    <p>Toggle Switch</p>
-    <input type="switch" class="switch"> 
+  <div>
+    <div class="container">
+      <section class="presentation">
+        <h2>Présentation de l'entreprise</h2>
+        <p>Description de l'entreprise (A faire)</p>
+        <NuxtLink to="/"><button class="gradient-btn">En savoir plus</button></NuxtLink>
+      </section>
+
+      <section class="Jeux">
+        <h2>Nos Jeux</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="..." alt="Kakou Quest">
+              <div class="card-body">
+                <h5 class="card-title">Kakou Quest</h5>
+                <p class="card-text">Rogue quoi</p>
+                <NuxtLink to="test.vue"><button class="gradient-btn">Détails</button></NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
