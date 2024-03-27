@@ -1,7 +1,13 @@
+<script setup>
+definePageMeta({
+    layout: 'user'
+  })
+</script>
+
 <template>
   <div class="margin">
     <p>Bouton</p>
-    <button class="gradient-button">Appuyer</button> 
+    <NuxtLink to="/"><button class="kakou-btn">Appuyer</button></NuxtLink>
   </div>
   <div class="margin">
     <p>Input</p>
@@ -14,8 +20,8 @@
       <span class="checkmark"></span>
     </label> 
   </div>
-  <div class="margin">
-    <p>Toggle Switch</p>
-    <input type="switch" class="switch"> 
-  </div>
 </template>
+
+<style scoped>
+  div {margin: 100px;}
+</style>

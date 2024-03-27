@@ -1,26 +1,28 @@
+/* All */
+body {color: #ffffff; font-family: serif; color: #212121;}
+.container {text-align: center;}
+
 /* Header */
-.index header {text-align: center;}
+header {position: fixed; width: 100%; top: 0; text-align: center; background-color: #212121; color: #ffffff;}
+header img {height: 8rem;}
+header .row {align-items: center;}
 
 /* PAGE */
-
+.container {margin-top: 14rem; margin-bottom: 3rem;}
 
 /* Footer */
+footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; color: #ffffff;}
+footer .row {text-align: center; padding-top: 1rem;}
 
 /* Button */
+.kakou-btn { position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: #ffffff; width: 10rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden; box-shadow: 3px 3px 5px #FC5C1C; }
+.kakou-btn:hover { transition: 0.5s; scale: 1.1; box-shadow: none; }
 
-/* Color */
-
-/* Rouge : #FA283A */
-/* Orange : #FC5C1C */
-/* Orange/Jaune : #FFB007 */
-/* Jaune : #FFD458 */
-
-.gradient-btn { position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: #ffffff; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden; box-shadow: 3px 3px 5px #FC5C1C; }
-.gradient-btn:hover { transition: 0.5s; scale: 1.1; box-shadow: none; }
-
+/* Input */
 .input { border-radius: 5px; outline: 2px solid #FC5C1C; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s; }
 .input:focus { outline-offset: 3px; background-color: #ffffff; }
 
+/* CheckBox */
 .checkbox-container { display: block; position: relative; cursor: pointer; }
 .checkbox-container input { position: absolute; opacity: 0; cursor: pointer; }
 .checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: transparent; border: 2px solid #FC5C1C; border-radius: 5px; transition: 0.3s; }
@@ -29,3 +31,12 @@
 .checkmark:after { content: ""; position: absolute; display: none; }
 .checkbox-container input:checked ~ .checkmark:after { display: block; }
 .checkbox-container .checkmark:after { left: 9px; top: 5px; width: 6px; height: 12px; border: solid #212121; border-width: 0 3px 3px 0; transform: rotate(45deg); }
+
+/* Color */
+/* Rouge : #FA283A */
+/* Orange : #FC5C1C */
+/* Orange/Jaune : #FFB007 */
+/* Jaune : #FFD458 */
+
+
+
