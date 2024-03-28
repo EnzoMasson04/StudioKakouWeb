@@ -1,5 +1,5 @@
 /* All */
-body {color: #ffffff; font-family: serif; color: #212121;}
+body {background-color: #212121; font-family: arial; color: #ffffff;}
 .container {text-align: center;}
 
 /* Header */
@@ -15,8 +15,9 @@ footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; colo
 footer .row {text-align: center; padding-top: 1rem;}
 
 /* Button */
-.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: #ffffff; width: 10rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden; box-shadow: 3px 3px 5px #FC5C1C;}
-.kakou-btn:hover {transition: 0.5s; scale: 1.1; box-shadow: none;}
+.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: white; font-weight: 600; width: 11rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
+/* .kakou-btn {position: relative; background: #FC5C1C; color: white; font-weight: 600; width: 11rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;} */
+.kakou-btn:hover {transition: 0.5s; scale: 1.1; box-shadow: 3px 3px 5px #FC5C1C;}
 
 /* Input */
 .input {border-radius: 5px; outline: 2px solid #FC5C1C; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s;}
@@ -37,6 +38,4 @@ footer .row {text-align: center; padding-top: 1rem;}
 /* Orange : #FC5C1C */
 /* Orange/Jaune : #FFB007 */
 /* Jaune : #FFD458 */
-
-
 

@@ -9,7 +9,7 @@
       </div>
       <div class="col-md-2">
         <NuxtLink to="test">
-          <button class="kakou-btn">JSP</button>
+          <button class="kakou-btn">DA</button>
         </NuxtLink>
       </div>
       <div class="col-md-2">
@@ -25,7 +25,7 @@
       </div>
       <div class="col-md-2">
         <NuxtLink to="test">
-          <button class="kakou-btn">DA</button>
+          <button class="kakou-btn">Nous contacter</button>
         </NuxtLink>
       </div>
       <div class="col-md-1"></div>
