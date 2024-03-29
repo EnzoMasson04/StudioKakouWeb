@@ -1,34 +1,27 @@
 <template>
   <header>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-2">
-        <NuxtLink to="entreprise">
-          <button class="kakou-btn">Notre Entreprise</button>
-        </NuxtLink>
-      </div>
-      <div class="col-md-2">
-        <NuxtLink to="test">
-          <button class="kakou-btn">DA</button>
-        </NuxtLink>
-      </div>
-      <div class="col-md-2">
+      <div class="col-md-1">
         <NuxtLink to="/">
           <img src="../public/Logo Sans Fond.png" alt="Logo StudioKakou" />
         </NuxtLink>
-        <h1>Studio Kakou</h1>
       </div>
       <div class="col-md-2">
-        <NuxtLink to="jeux">
-          <button class="kakou-btn">Notre Jeu</button>
+        <NuxtLink to="entreprise">
+          <button class="kakou-btn">Nous découvrir</button>
         </NuxtLink>
       </div>
       <div class="col-md-2">
         <NuxtLink to="test">
-          <button class="kakou-btn">Nous contacter</button>
+          <button class="kakou-btn">Actus</button>
         </NuxtLink>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-5"></div>
+      <div class="col-md-2">
+        <NuxtLink to="test">
+          <button class="kakou-btn">Connexion</button>
+        </NuxtLink>
+      </div>
     </div>
   </header>
 </template>

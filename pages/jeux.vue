@@ -12,7 +12,7 @@ definePageMeta({
         <div class="justify-content-center">
           <img src="../public/Logo KakouQuest.png" alt="Kakou Quest">
           <p>Rogue quoi</p>
-          <NuxtLink to="https://0x72.itch.io/dungeontileset-ii" target="_blank"><button class="kakou-btn">Détails</button></NuxtLink>
+          <NuxtLink to="https://0x72.itch.io/dungeontileset-ii" target="_blank"><button class="quest-btn">Détails</button></NuxtLink>
         </div>
       </div>
     </div>

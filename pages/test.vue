@@ -21,6 +21,22 @@ definePageMeta({
         <span class="checkmark"></span>
       </label> 
     </div>
+
+    <div class="margin">
+      <p>Bouton</p>
+      <NuxtLink to="/"><button class="quest-btn">Appuyer</button></NuxtLink>
+    </div>
+    <div class="margin">
+      <p>Input</p>
+      <input class="quest-input"> 
+    </div>
+    <div class="margin" style="margin-bottom: 300px;">
+      <p>CheckBox</p>
+      <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label> 
+    </div>
   </div>
 </template>
 

@@ -1,27 +1,33 @@
 /* All */
-body {background-color: #212121; font-family: arial; color: #ffffff;}
+body {background-color: #ffffff; font-family: arial; color: #212121;}
 .container {text-align: center;}
 
 /* Header */
 header {position: fixed; width: 100%; top: 0; text-align: center; background-color: #212121; color: #ffffff;}
-header img {height: 8rem;}
+header img {height: 6rem;}
 header .row {align-items: center;}
 
 /* PAGE */
 .container {margin-top: 14rem; margin-bottom: 3rem;}
+.index .container div {background-image: "C:/Users/enzom/Desktop/Jsais pas moi/IUT/S2/SAE/StudioKakou/public/Tableau.jpg";}
 
 /* Footer */
 footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; color: #ffffff;}
 footer .row {text-align: center; padding-top: 1rem;}
 
 /* Button */
-.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: white; font-weight: 600; width: 11rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
-/* .kakou-btn {position: relative; background: #FC5C1C; color: white; font-weight: 600; width: 11rem; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;} */
+.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: white; font-weight: 600; width: 14rem; padding: 10px 20px; border-radius: 5px; font-size: 22px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
 .kakou-btn:hover {transition: 0.5s; scale: 1.1; box-shadow: 3px 3px 5px #FC5C1C;}
+
+.quest-btn {position: relative; background: linear-gradient(90deg, #483B3A, #C24531); color: white; font-weight: 600; width: 14rem; padding: 10px 20px; border-radius: 5px; font-size: 22px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
+.quest-btn:hover {transition: 0.5s; scale: 1.1; box-shadow: 3px 3px 5px #AA8D7A;}
 
 /* Input */
 .input {border-radius: 5px; outline: 2px solid #FC5C1C; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s;}
 .input:focus {outline-offset: 3px; background-color: #ffffff;}
+
+.quest-input {border-radius: 5px; outline: 2px solid #483B3A; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s;}
+.quest-input:focus {outline-offset: 3px; background-color: #ffffff;}
 
 /* CheckBox */
 .checkbox-container {display: block; position: relative; cursor: pointer;}
@@ -33,9 +39,24 @@ footer .row {text-align: center; padding-top: 1rem;}
 .checkbox-container input:checked ~ .checkmark:after {display: block;}
 .checkbox-container .checkmark:after {left: 9px; top: 5px; width: 6px; height: 12px; border: solid #212121; border-width: 0 3px 3px 0; transform: rotate(45deg);}
 
-/* Color */
+.quest-checkbox-container {display: block; position: relative; cursor: pointer;}
+.quest-checkbox-container input {position: absolute; opacity: 0; cursor: pointer;}
+.quest-checkmark {position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: transparent; border: 2px solid #483B3A; border-radius: 5px; transition: 0.3s;}
+.quest-checkbox-container:hover input ~ .quest-checkmark {background-color: #AA8D7A;}
+.quest-checkbox-container input:checked ~ .quest-checkmark {background-color: #C24531; border: 2px solid #212121;}
+.quest-checkmark:after {content: ""; position: absolute; display: none;}
+.quest-checkbox-container input:checked ~ .quest-checkmark:after {display: block;}
+.quest-checkbox-container .quest-checkmark:after {left: 9px; top: 5px; width: 6px; height: 12px; border: solid #212121; border-width: 0 3px 3px 0; transform: rotate(45deg);}
+
+/* Color Site */
 /* Rouge : #FA283A */
 /* Orange : #FC5C1C */
 /* Orange/Jaune : #FFB007 */
 /* Jaune : #FFD458 */
 
+/* Color Jeu */
+/* Rouge : #C24531 */
+/* Orange : #E67631 */
+/* Beige : #AA8D7A */
+/* Marron : #483B3A */
+/* Noir : #212121 */
