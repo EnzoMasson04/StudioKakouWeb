@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <div class="container">
-    <h2>Kakou Quest</h2>
+    <h1>Kakou Quest</h1>
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -15,6 +15,7 @@ definePageMeta({
           <div class="card-body">
             <h5 class="card-title">Kakou Quest</h5>
             <p class="card-text">Un RogueLike amsuant (et bien rageant) à partager entre amis.</p>
+            <button class="quest-btn">Download !</button>
           </div>
         </div>
       </div>
@@ -23,6 +24,10 @@ definePageMeta({
 </template>
 
 <style scoped>
-  template {font-family: 'VT323' !important;}
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  div {font-family: 'VT323';}
+  h1 {font-size: 100px;}
+  .container {margin-top: 6rem;}
+  .card {margin-top: 0;}
   .card img {background: radial-gradient(circle, #483B3A, #483B3A, #212121, #212121);}
 </style>
