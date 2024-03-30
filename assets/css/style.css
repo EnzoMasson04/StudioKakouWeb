@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 /* All */
 body {background-color: grey; font-family: 'Prata'; color: #212121;}
@@ -10,14 +10,14 @@ header img {height: 6rem;}
 header .row {align-items: center;}
 
 /* PAGE */
-.container {margin-top: 14rem; margin-bottom: 3rem;}
+.container {margin-top: 8rem; margin-bottom: 3rem;}
 
 /* Footer */
 footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; color: #ffffff;}
 footer .row {text-align: center; padding-top: 1rem;}
 
 /* Card */
-.card {margin: 5rem; border-radius: 10px; padding: 2rem; background-color: #212121; color: #ffffff;}
+.card {margin: 2rem 5rem; border-radius: 10px; padding: 2rem; background-color: #212121; color: #ffffff;}
 .card img {border-radius: 10px;}
 
 /* Button */
