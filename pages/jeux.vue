@@ -23,5 +23,6 @@ definePageMeta({
 </template>
 
 <style scoped>
+  template {font-family: 'VT323' !important;}
   .card img {background: radial-gradient(circle, #483B3A, #483B3A, #212121, #212121);}
 </style>
