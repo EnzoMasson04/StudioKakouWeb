@@ -12,8 +12,8 @@
         </NuxtLink>
       </div>
       <div class="col-md-2">
-        <NuxtLink to="test">
-          <button class="kakou-btn">Actus</button>
+        <NuxtLink to="stats">
+          <button class="kakou-btn">Stats</button>
         </NuxtLink>
       </div>
       <div class="col-md-5"></div>

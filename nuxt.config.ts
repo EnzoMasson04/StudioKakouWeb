@@ -17,7 +17,7 @@ export default defineNuxtConfig({
                 {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'},
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&Playfair+Display&display=swap'},
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
-                {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65', crossorigin: 'anonymous'}
+                {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65', crossorigin: 'anonymous'},
             ],
             style: [],
             script: [
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     modules: [
         //'@nuxtjs/i18n',
         'nuxt-icon',
-        '@nuxtjs/device'
+        '@nuxtjs/device',
     ],
     imports: {
         dirs: ["./utils"],

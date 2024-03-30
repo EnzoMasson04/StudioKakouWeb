@@ -2,8 +2,8 @@
   <footer>
     <div class="row">
       <div class="col-md-12">
-        <p>Adresse : Adresse de l'entreprise Téléphone : Numéro de téléphone Email : enzomasson04@gmail.com</p>
-      </div>
+        <p>Adresse : 650 Route des Colles, Biot &nbsp; &nbsp; | &nbsp; &nbsp; <a href="tel:0777045311">Téléphone</a> &nbsp; &nbsp;|&nbsp; &nbsp; Email : <a href="mailto:studiokakou">studiokakou@gmail.com</a></p>
+      </div> 
     </div>
   </footer>
 </template>
