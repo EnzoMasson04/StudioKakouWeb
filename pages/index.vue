@@ -36,7 +36,7 @@ definePageMeta({
           <div class="card-body">
             <h5 class="card-title">Nos serveurs</h5>
             <p class="card-text">Kakou Quest a comme particularité principale son incroyable mode multijoueur.
-              Vous devrez louer nos serveurs pour jouer a + de 4 amis.</p>
+              Vous devrez louer nos serveurs pour jouer avec + de 4 amis.</p>
           </div>
         </div>
       </div>

@@ -4,42 +4,29 @@ definePageMeta({
   })
 </script>
 
-<template>
-  <div class="container">
-    <div class="margin">
-      <p>Bouton</p>
-      <NuxtLink to="/"><button class="kakou-btn">Appuyer</button></NuxtLink>
-    </div>
-    <div class="margin">
-      <p>Input</p>
-      <input class="input"> 
-    </div>
-    <div class="margin">
-      <p>CheckBox</p>
-      <label class="checkbox-container">
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label> 
-    </div>
+<!-- C'est pas très clair vu le nom du fichier mais ça c'est la page de login -->
 
-    <div class="margin">
-      <p>Bouton</p>
-      <NuxtLink to="/"><button class="quest-btn">Appuyer</button></NuxtLink>
-    </div>
-    <div class="margin">
-      <p>Input</p>
-      <input class="quest-input"> 
-    </div>
-    <div class="margin" style="margin-bottom: 300px;">
-      <p>CheckBox</p>
-      <label class="checkbox-container">
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label> 
-    </div>
-  </div>
+<template>
+  <div class="login-box">
+    <h1>Connexion</h1>
+    <br>
+    <form action="#" method="post">
+        <input class="input-text" type="text" name="username" placeholder="Nom de Kakou" required>
+        <br><br>
+        <input class="input-text" type="password" name="password" placeholder="Kakou password" required>
+        <br><br>
+        <NuxtLink to="stats">
+          <button class="kakou-btn">Se connecter</button>
+        </NuxtLink>
+    </form>
+</div>
 </template>
 
 <style scoped>
-  .margin {margin: 100px;}
+  form {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+  input {padding: 2rem; outline: 5px solid #FA283A;}
+  input::placeholder{color: #FC5C1C;}
+  button {position: absolute; top: 120%; left: 50%; transform: translate(-50%, -50%);}
+  h1 {position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); font-size: 70px;}
 </style>
+
