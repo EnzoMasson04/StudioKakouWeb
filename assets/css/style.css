@@ -33,6 +33,9 @@ footer .row {text-align: center; padding-top: 1rem;}
 .quest-input {border-radius: 5px; outline: 2px solid #483B3A; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s;}
 .quest-input:focus {outline-offset: 3px; background-color: #ffffff;}
 
+.input-text {color:#000000; border-radius: 5px; border: 0; background-color: #bebdbd; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s; }
+.input-text:focus {outline-offset: 3px; background-color: #ffffff;}
+
 /* CheckBox */
 .checkbox-container {display: block; position: relative; cursor: pointer;}
 .checkbox-container input {position: absolute; opacity: 0; cursor: pointer;}
