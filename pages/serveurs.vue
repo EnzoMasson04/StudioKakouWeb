@@ -10,5 +10,5 @@ definePageMeta({
 </template>
 
 <style scoped>
-  h1 {margin-top: 300px; text-align: center;}
+  h1 {margin-top: 400px; text-align: center;}
 </style>
