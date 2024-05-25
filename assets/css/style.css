@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
 /* All */
-body {background-color: grey; font-family: 'Prata'; color: #212121;}
-.container {text-align: center;}  
+body {background-color: #353535; font-family: 'Prata'; color: #212121;}
+h1 {font-family: 'Bungee Spice';}
+.container {text-align: center;}
 
 /* Header */
 header {position: fixed; width: 100%; top: 0; text-align: center; background-color: #212121; color: #ffffff; z-index: 1000000000;}
@@ -11,6 +13,7 @@ header .row {align-items: center;}
 
 /* PAGE */
 .container {margin-top: 8rem; margin-bottom: 3rem;}
+.container p, h2 {color: white;}
 
 /* Footer */
 footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; color: #ffffff;}
