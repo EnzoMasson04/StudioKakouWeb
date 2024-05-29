@@ -6,4 +6,4 @@
       </div> 
     </div>
   </footer>
-
+</template>
