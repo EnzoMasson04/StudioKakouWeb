@@ -1,25 +1,39 @@
 <script setup>
 definePageMeta({
-    layout: 'kakouquest'
+    layout: 'user'
   })
 </script>
 
 <template>
   <div class="container">
-    <h1>Kakou Quest</h1>
+    <h2 class="game-title">Kakou Quest</h2>
+    <br>
     <div class="row">
-      <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="card">
           <img src="../public/Logo KakouQuest.png" alt="Kakou Quest">
           <div class="card-body">
-            <h5 class="card-title">Kakou Quest</h5>
-            <p class="card-text">Un RogueLike amsuant (et bien rageant) à partager entre amis.</p>
-            <button class="quest-btn">Download !</button>
+            <h2 class="card-title">Solo</h2>
+            <p class="card-text">Jouez à notre jeu en solo avec nos derniers ajouts et fonctionnalités !</p>
+            <button class="quest-btn">Télécharger</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="../public/Logo KakouQuest.png" alt="Kakou Quest">
+          <div class="card-body">
+            <h2 class="card-title">Multijoueur</h2>
+            <p class="card-text">Jouez à une version plus élémentaire de Kakou Quest avec jusqu'à 4 amis !</p>
+            <button class="quest-btn">Télécharger</button>
           </div>
         </div>
       </div>
     </div>
+
+    <p class="card-text" style="font-size: 30px;">Vous souhaitez héberger votre partie multijoueur ?</p>
+    <p class="card-text" style="font-style: 29px;"><a href="">Téléchargez notre outil de serveur</a></p>
   </div>
 </template>
 
