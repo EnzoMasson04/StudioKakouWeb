@@ -61,6 +61,10 @@ export default defineNuxtConfig({
       }
     }
   },
+  devServer: {
+    host: '165.232.124.186',
+    port: 3001
+  },
   runtimeConfig: {
     dbHost: process.env.DB_HOST,
     dbUser: process.env.DB_USER,
