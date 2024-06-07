@@ -17,12 +17,14 @@ definePageMeta({
             </div>
             <div class="col-md-6">
               <div class="card-body jeu">
-                <h5 class="card-title">Kakou Quest</h5>
+                <h2 class="game-title" style="font-size: 40px;">Kakou Quest</h2>
+                <br>
                 <p class="card-text">Le nouveau jeu Kakou Quest est enfin disponible. Jouez au tout nouveau Roguelike remis au goût du jour
                   par notre équipe. Dans cette toute nouvelle approche, découvrez un grand nombre de nouveautés dans ce genre tel qu'un mode 
                   multijoueur.</p>
+                <br>
                 <NuxtLink to="jeux">
-                  <button class="kakou-btn">Jouez dès maintenant</button>
+                  <button class="kakou-btn">Jouer dès maintenant</button>
                 </NuxtLink>
               </div>
             </div>
@@ -58,7 +60,7 @@ definePageMeta({
   .container {margin-bottom: 300px;}
   .kakou-btn {width: 22rem;}
   .card:hover {transition: 0.3s; scale: 1.05; box-shadow: 0 0 9px 4px #ffffff; cursor: pointer;}
-  .logo img {background: radial-gradient(circle, #6d4c04, #6d4c04, #212121, #212121);}
+  .logo img {background: radial-gradient(circle, #6d4c04, #6d4c04, #1F1E1F, #1F1E1F);}
   h1 {font-size: 70px;}
   h5 {margin: 1rem 0;}
 </style>

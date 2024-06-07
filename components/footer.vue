@@ -1,9 +1,15 @@
 <template>
-  <footer>
-    <div class="row">
-      <div class="col-md-12">
-        <p>Adresse : <a href="https://maps.app.goo.gl/L5ZEy3nZXPD7zioBA" target="_blank">650 Route des Colles, Biot</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="tel:0777045311" target="_blank">Téléphone</a> &nbsp; &nbsp;|&nbsp; &nbsp; Email : <a href="mailto:studiokakou@gmail.com" target="_blank">studiokakou@gmail.com</a> &nbsp; &nbsp;|&nbsp; &nbsp; <a href="https://www.linkedin.com/in/studio-kakou-1a5854300/" target="_blank">LinkedIn</a></p>
-      </div> 
+  <footer class="footer">
+    <div>
+        <h2 style="font-size: 20px;">Notre établissement principal</h2>
+        <a href="https://maps.google.com/?q=650 Route des Colles, Biot">650 Route des Colles, Biot</a>
+    </div>
+    <div class="separator"></div>
+    <div>
+        <h2 style="font-size: 20px;">Nous contacter</h2>
+        <a href="tel:+33777045311">+33 7 77 04 53 11</a><br>
+        <a href="mailto:studiokakou@gmail.com">studiokakou@gmail.com</a>
     </div>
   </footer>
 </template>
+

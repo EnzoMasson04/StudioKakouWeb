@@ -1,10 +1,8 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { useAsyncData } from '#app'
 
 definePageMeta({
-    layout: 'user'
-  })
+  layout: 'user'
+})
 
 export default defineComponent({
   setup() {
@@ -12,8 +10,9 @@ export default defineComponent({
     const users = ref([]);
 
     useAsyncData(async () => {
-      const [rows] = await $db.query('SELECT * FROM utilisateurs')
+      const [rows] = await $db.query('SELECT * FROM parties')
       users.value = rows;
+      return rows;
     });
 
     return { users };
@@ -23,7 +22,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <h1>Liste des utilisateurs</h1>
+    <h1>Liste des parties</h1>
     <ul>
       <li v-for="user in users" :key="user.id">
         {{ user.pseudo }} - {{ user.score }}

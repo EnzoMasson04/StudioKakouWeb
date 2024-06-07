@@ -17,7 +17,7 @@
     "consola": "^3.2.3",
     "dotenv": "^16.4.5",
     "google-fonts": "^1.0.0",
-    "mysql2": "^3.9.7",
+    "mysql2": "^3.9.9",
     "nuxt": "^3.11.1",
     "nuxt-protected-mailto": "^0.0.12",
     "vue": "^3.4.21",
