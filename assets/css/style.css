@@ -1,33 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* All */
-body {background-color: #353535; font-family: 'Prata'; color: #212121;}
-h1 {font-family: 'Bungee Spice';}
+body {background-color: #252425; font-family: 'Roboto'; color: #212121;}
+h1 {font-family: 'Archivo Black'; color: #FC5C1C;}
+h2 {font-size: 50px; font-weight: bolder;}
+.game-title {font-family: 'Press Start 2P'; color: #66C5BF; text-transform: uppercase;}
 .container {text-align: center;}
 
 /* Header */
-header {position: fixed; width: 100%; top: 0; text-align: center; background-color: #212121; color: #ffffff; z-index: 1000000000;}
+header {position: fixed; width: 100%; top: 0; text-align: center; background-color: #1F1E1F; color: #ffffff; z-index: 1000000000;}
 header img {height: 6rem;}
 header .row {align-items: center;}
+.header-icon:hover {transform: scale(1.2);}
+.header-icon {margin: 0 1rem; transition: 0.3s;}
 
 /* PAGE */
 .container {margin-top: 8rem; margin-bottom: 3rem;}
 .container p, h2 {color: white;}
 
 /* Footer */
-footer {position: fixed; width: 100%; bottom: 0; background-color: #212121; color: #ffffff;}
-footer .row {text-align: center; padding-top: 1rem;}
+.footer {
+    background-color: #1F1E1F;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+.footer div {
+    flex: 1;
+}
+.footer a {
+    color: #00AEEF;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.separator {
+    position: absolute;
+    width: 1px;
+    background-color: white;
+    height: 70px;
+}
 
 /* Card */
-.card {margin: 2rem 5rem; border-radius: 10px; padding: 2rem; background-color: #212121; color: #ffffff;}
+.card {margin: 2rem 5rem; border-radius: 10px; padding: 2rem; transition: 0.3s; background-color: #1F1E1F; color: #ffffff;}
 .card img {border-radius: 10px;}
 
 /* Button */
-.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FFB007); color: white; font-weight: 600; width: 14rem; padding: 10px; border-radius: 5px; font-size: 22px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
-.kakou-btn:hover {transition: 0.3s; scale: 1.1; box-shadow: 3px 3px 5px #FC5C1C;}
-.quest-btn {position: relative; background: linear-gradient(90deg, #483B3A, #C24531); color: white; font-weight: 600; width: 14rem; padding: 10px; border-radius: 5px; font-size: 22px; cursor: pointer; transition: background 0.3s ease; overflow: hidden;}
-.quest-btn:hover {transition: 0.3s; scale: 1.1; box-shadow: 3px 3px 5px #AA8D7A;}
+.kakou-btn {position: relative; background: linear-gradient(90deg, #FC5C1C, #FC5C1C); color: white; font-weight: 600; transition: 0.3s; width: 14rem; padding: 10px; border-radius: 5px; font-size: 22px; cursor: pointer; overflow: hidden;}
+.kakou-btn:hover {scale: 1.1; box-shadow: 3px 3px 5px #FC5C1C;}
+.quest-btn {position: relative; background: linear-gradient(90deg, #483B3A, #C24531); color: white; transition: 0.3s; font-weight: 600; width: 14rem; padding: 10px; border-radius: 5px; font-size: 22px; cursor: pointer; overflow: hidden;}
+.quest-btn:hover {scale: 1.1; box-shadow: 3px 3px 5px #AA8D7A;}
+.line-button {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.line-button:hover {
+    background-color: #FC5C1C;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    font-size: 18px;
+}
+.line-button img {
+    height: 30px;
+    margin-right: 10px;
+    filter: invert(100%) brightness(200%);
+}
+.line-button span {
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 18px;
+    font-weight: 800;
+}
 
 /* Input */
 .input {border-radius: 5px; outline: 2px solid #FC5C1C; border: 0; background-color: #e2e2e2; outline-offset: 4px; padding: 10px 1rem; transition: 0.25s;}
