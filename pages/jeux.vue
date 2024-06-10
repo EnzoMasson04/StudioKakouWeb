@@ -8,6 +8,10 @@ definePageMeta({
   <div class="container">
     <h2 class="game-title">Kakou Quest</h2>
     <br>
+    <NuxtLink to="/user_guide">
+      <p class="card-text" style="font-style: 29px;">User's Guide</p>
+    </NuxtLink>
+    <br>
     <div class="row">
       <div class="col-md-6">
         <div class="card">
