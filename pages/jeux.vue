@@ -35,7 +35,7 @@ definePageMeta({
 
       <div class="col-md-6">
         <div class="card">
-          <img src="../public/Logo KakouQuest.png" alt="Kakou Quest">
+          <img src="../public/multiplayer_icon.png" alt="Kakou Quest">
           <div class="card-body">
             <h2 class="card-title">Multijoueur</h2>
             <p class="card-text">Jouez à une version plus élémentaire de Kakou Quest avec jusqu'à 4 amis !</p>
