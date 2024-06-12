@@ -5,11 +5,13 @@ definePageMeta({
 </script>
 
 <template>
-    <div style="height: 50px;"
+    <div style="height: 100px;">
     </div>
-    <img src="public/user_guide.png" alt="" style="width: 80%; display: block;
+    <img src="public/user_guide.jpg" alt="" style="width: 70%; display: block;
   margin-left: auto;
   margin-right: auto;">
+  <div style="height: 50px;">
+  </div>
 </template>
 
 <style scoped>

@@ -8,7 +8,7 @@ definePageMeta({
 <template>
   <div class="container">
     <div class="row">
-      <h1>Studio Kakou</h1>
+      <h1 style="font-size: 80px;">Studio Kakou</h1>
       <div class="col-md-12">
         <div class="card" @click="navigateTo('jeux')">
           <div class="row">

@@ -8,6 +8,15 @@ definePageMeta({
   <div class="container">
     <h2 class="game-title">Kakou Quest</h2>
     <br>
+    <p style="font-size: 32px;">
+      Choisissez quelle option vous souhaitez télécharger
+    </p>
+
+    <br>
+
+    <p style="font-size: 23px;">
+      Vous ne savez pas jouer à Kakou Quest ? Consultez notre guide utilisateur pour en savoir plus  :
+    </p>
     <NuxtLink to="/user_guide">
       <p class="card-text" style="font-style: 29px;">User's Guide</p>
     </NuxtLink>
