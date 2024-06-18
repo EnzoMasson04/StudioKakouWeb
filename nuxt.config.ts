@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config';
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import dotenv from 'dotenv';
 
 // Charger les variables d'environnement
@@ -39,9 +40,18 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/style.css'
   ],
+  build: {
+    transpile: ['vuetify'],
+  },
   modules: [
     'nuxt-icon',
     '@nuxtjs/device',
+    (_options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }))
+      })
+    },
   ],
   plugins: [
     '~/plugins/mysql'
@@ -64,6 +74,13 @@ export default defineNuxtConfig({
   devServer: {
     host: 'localhost',
     port: 3001
+  },
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    },
   },
   runtimeConfig: {
     dbHost: process.env.DB_HOST,
