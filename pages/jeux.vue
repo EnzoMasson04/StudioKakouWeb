@@ -8,6 +8,19 @@ definePageMeta({
   <div class="container">
     <h2 class="game-title">Kakou Quest</h2>
     <br>
+    <p style="font-size: 32px;">
+      Choisissez quelle option vous souhaitez télécharger
+    </p>
+
+    <br>
+
+    <p style="font-size: 23px;">
+      Vous ne savez pas jouer à Kakou Quest ? Consultez notre guide utilisateur pour en savoir plus  :
+    </p>
+    <NuxtLink to="/user_guide">
+      <p class="card-text" style="font-style: 29px;">User's Guide</p>
+    </NuxtLink>
+    <br>
     <div class="row">
       <div class="col-md-6">
         <div class="card">
@@ -22,7 +35,7 @@ definePageMeta({
 
       <div class="col-md-6">
         <div class="card">
-          <img src="../public/Logo KakouQuest.png" alt="Kakou Quest">
+          <img src="../public/multiplayer_icon.png" alt="Kakou Quest">
           <div class="card-body">
             <h2 class="card-title">Multijoueur</h2>
             <p class="card-text">Jouez à une version plus élémentaire de Kakou Quest avec jusqu'à 4 amis !</p>
