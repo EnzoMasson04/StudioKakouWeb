@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     }
   },
   devServer: {
-    host: '165.232.124.186',
+    host: 'localhost',
     port: 3001
   },
   runtimeConfig: {

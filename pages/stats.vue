@@ -1,32 +1,20 @@
 <script lang="ts">
 
-definePageMeta({
-  layout: 'user'
-})
 
-export default defineComponent({
-  setup() {
-    const { $db } = useNuxtApp()
-    const users = ref([]);
-
-    useAsyncData(async () => {
-      const [rows] = await $db.query('SELECT * FROM parties')
-      users.value = rows;
-      return rows;
+fetch('http://localhost:3000/api/players')
+    .then(response => response.json())
+    .then(data => {
+      console.log('Data received from API:');
+      console.log(data);
     });
 
-    return { users };
-  }
-})
 </script>
 
 <template>
   <div>
     <h1>Liste des parties</h1>
     <ul>
-      <li v-for="user in users" :key="user.id">
-        {{ user.pseudo }} - {{ user.score }}
-      </li>
+    <!--TODO: Display the list of players stats-->
     </ul>
   </div>
 </template>
