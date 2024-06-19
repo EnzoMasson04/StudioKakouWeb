@@ -1,112 +1,140 @@
-<template>
-    <h1>Statistiques des joueurs</h1>
-    <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Rechercher"
-        single-line
-        hide-details
-    ></v-text-field>
-    <v-data-table
-        :headers="headers"
-        :items="player"
-        :search="search"
-        class="elevation-1"
-    ></v-data-table>
-</template>
+<script setup lang="ts">
+import { ref, onMounted, computed } from 'vue';
 
-<script lang="ts">
+const search = ref('');
+const players = ref([]);
+const headers = [
+  { text: 'ID', value: 'id' },
+  { text: 'Partie ID', value: 'partie_id' },
+  { text: 'Nom du joueur', value: 'player_name' },
+  { text: 'HP', value: 'hp' },
+  { text: 'Stamina', value: 'stamina' },
+  { text: 'Force', value: 'strength' },
+  { text: 'Vitesse', value: 'speed' },
+  { text: 'Niveau du joueur', value: 'player_level' },
+  { text: 'Score', value: 'score' },
+];
 
-export default {
-  data() {
-    return {
-      search: '',
-      player: [],
-      headers: [
-        { text: 'ID', value: 'id' },
-        { text: 'Partie ID', value: 'partie_id' },
-        { text: 'Nom du joueur', value: 'player_name' },
-        { text: 'HP', value: 'hp' },
-        { text: 'Stamina', value: 'stamina' },
-        { text: 'Force', value: 'strength' },
-        { text: 'Vitesse', value: 'speed' },
-        { text: 'Niveau du joueur', value: 'player_level' },
-        { text: 'Score', value: 'score' },
-      ]
-    }
-  },
-  mounted() {
-    fetch('http://localhost:3000/api/players')
-        .then(response => response.json())
-        .then(data => {
-          console.log('Data received from API:');
-          console.log(data[0].name);
-          this.player = data;
-        });
-  }
-}
+onMounted(() => {
+  fetch('http://localhost:3000/api/players')
+    .then(response => response.json())
+    .then(data => {
+      players.value = data;
+    });
+});
+
+const filteredPlayers = computed(() => {
+  return players.value.filter(player =>
+    Object.values(player).some(val =>
+      String(val).toLowerCase().includes(search.value.toLowerCase())
+    )
+  );
+});
 </script>
 
-<style scoped>
-h1 {margin-top: 400px; text-align: center;}
-/* pages/stats.vue */
+<template>
+  <div>
+    <h1>Statistiques des joueurs</h1>
+    <input
+      type="text"
+      v-model="search"
+      placeholder="Rechercher"
+      class="search-input"
+    />
+    <div class="table-container">
+      <table class="player-table">
+        <thead>
+          <tr>
+            <th v-for="header in headers" :key="header.value">
+              {{ header.text }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="player in filteredPlayers" :key="player.id" class="table-row">
+            <td>{{ player.id }}</td>
+            <td>{{ player.partie_id }}</td>
+            <td>{{ player.player_name }}</td>
+            <td>{{ player.hp }}</td>
+            <td>{{ player.stamina }}</td>
+            <td>{{ player.strength }}</td>
+            <td>{{ player.speed }}</td>
+            <td>{{ player.player_level }}</td>
+            <td>{{ player.score }}</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
 
-.v-data-table {
-  margin: auto;
-  max-width: 90%;
+<style scoped>
+h1 {
+  margin-top: 140px;
+  text-align: center;
+}
+
+input{
+  color: #ffffff;
+}
+
+.search-input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table-container {
+  margin: 20px auto;
+  width: 90%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.player-table {
+  width: 100%;
   border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #292828;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.player-table th,
+.player-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.player-table th {
   background-color: #212121;
   color: #ffffff;
 }
 
-.v-data-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
+.player-table tbody tr {
+  transition: background-color 0.3s ease;
 }
 
-.v-data-table th,
-.v-data-table td {
-  padding: 12px 15px;
-  border: 1px solid #424242;
+.player-table tbody tr:hover {
+  background-color: #444141;
 }
 
-.v-data-table tbody tr {
-  border-bottom: 1px solid #424242;
+.table-row {
+  border-radius: 8px;
 }
 
-.v-data-table tbody tr:nth-of-type(even) {
-  background-color: #383838;
-}
-
-.v-data-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
-}
-
-.v-data-table tbody tr.active-row {
-  font-weight: bold;
-  color: #009879;
-}
-
-.v-text-field {
-  margin: 20px 0;
-  max-width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: #ffffff;
-}
-
-.v-input__control .v-label {
-  color: #ffffff;
-}
-
-.v-input__control .v-input__slot {
-  color: #ffffff;
-}
-
-.v-text-field input {
-  color: #ffffff;
+@media screen and (max-width: 600px) {
+  .table-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
 }
 </style>
